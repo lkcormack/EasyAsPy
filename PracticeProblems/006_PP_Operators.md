@@ -1,5 +1,7 @@
 ### Practice Puzzles: Operators and Logical Comparisons
 
+Start a new notebook for this exercise. Keep it neat and explain what you’re doing (which puzzle you’re on and whatever else you’d like to say!) using markdown cells.
+
 ---
 
 To start, set the following variables in your notebook for this homework:
@@ -26,7 +28,7 @@ For each riddle, use [f-strings](https://docs.python.org/3/tutorial/inputoutput.
 
 To make our code interactive, we can give it the most basic of user interfaces: `input()`
 
-#### input()` function
+#### input() function
 
 To make our code interactive, we can give it the most basic of user interfaces: `input()`
 
@@ -37,3 +39,17 @@ my_name = input("Hi! I'm your code! What's your name? \n")
 print(f"Nice to meet you, {my_name}! \n I'm your code, so you can call my anything...")
 ```
 
+**Before you move on**
+
+- Check the `type()` of `my_name`!
+- Can you figure out what the `\n` is doing in the strings above?
+
+---
+
+For each riddle below, use the `input()` function to get data from your user (which is you!). *Each riddle should operate on a new input!* As before, make sure the output is pretty (and perhaps witty).
+
+* Are there 5 or more letters in your name?
+* Have the user type a number (like “42”). Is the input greater than 11? *Make sure the answer is (mathematically) correct!*
+* Return the square of an input number.
+* Have the user enter their name again. Is the name, *left as a `str`*, greater than “Hello”? What do you think about this result? How can one letter be “greater than” another?
+* Have the users type two numbers with a space in between. Tell the user the remainder when the first number is divided into the second. (Note: You’ll have to extract the two numbers out of the input string.)
