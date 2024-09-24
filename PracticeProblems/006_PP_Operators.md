@@ -53,3 +53,7 @@ For each riddle below, use the `input()` function to get data from your user (wh
 * Return the square of an input number.
 * Have the user enter their name again. Is the name, *left as a `str`*, greater than “Hello”? What do you think about this result? How can one letter be “greater than” another?
 * Have the users type two numbers with a space in between. Tell the user the remainder when the first number is divided into the second. (Note: You’ll have to extract the two numbers out of the input string.)
+* Have the user enter 4 numbers (you can use `input()` 4 times rather than trying to carve up a single input string). Is the first greater than the second `and` the third greater than the fourth?
+* Write a little “adding machine” that adds two numbers from the user and prints the result.
+* Have the user enter two single letters (you can have them enter just the numbers, the numbers with a space, or use `input()` twice). Which letter is greater? Now use the `ord()` function on each of the letters (e.g. `ord("h")`). Does the output from `ord()` agree with your “greater than” comparison.
+* Write a `for()` loop to go through an input string (like your name) and print the `ord()` value of each letter. Print the `ord()` values from your name and from the string “Hello”? Try different names like “Zoe” and “Aaron” and see if you can figure out how Python determines if one string is “greater than” another.
