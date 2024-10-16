@@ -11,4 +11,12 @@ our_lamb = Student("Humanities")
 
 # tell the student to study!
 our_lamb.study()
-    
+
+
+print(f"Our lamb's major was {our_lamb.major}")
+
+# switch majors
+our_lamb.major = "Psycholosophy"
+print("Our lamb just changed majors!")
+print(f"Our lamb's new major is {our_lamb.major}")
+
