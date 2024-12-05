@@ -1,13 +1,14 @@
+Using Git and GitHub from a terminal
 
----
+Installing Git: 
 
-## **Basic Git Functionality Exercise**
+Macs and Linux machines come with [Git](https://github.com/git-guides/install-git) pre-installed, but we windows users need to install it first. BUT, if you’ve installed the [GitHub Desktop App](https://desktop.github.com/download/), Git will have been installed automatically. You can check if Git is installed by  opening a terminal and typing `git version`. If it’s not, follow the instructions [here](https://github.com/git-guides/install-git).
 
-### Objective: Familiarize yourself with basic Git commands and understand the flow of changes from your local machine to a remote repository – and back.
+**Once you have Git installed, open a terminal (or “console” or “Powershell” on Windows) and navigate to the folder containing the test repository we made last time.**
 
----
+Now, here’s what we are going to do:
 
-### **The Plan:**
+### The Plan:
 
 You want a simple webpage to tell the world who your favorite Simpsons character is. You'll 
 
@@ -27,11 +28,14 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 ### 1. Create a New File
 
 - Open a terminal in the directory of the repo you cloned in the last exercise (the test or junk repo).
+
 - In the root of your cloned repository, create a new file named `index.html`.
 
   ```
   $ touch index.html
   ```
+
+  *If you prefer, you can make the new file in any text editor (I heart [Notepad++](https://notepad-plus-plus.org/) for Windows and [Moped](https://apps.apple.com/us/app/moped-text-editor/id1477419086?mt=12) for Mac).* Just make sure that you save the file with an “.html” extension!
 
 ---
 
@@ -54,12 +58,15 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
   ```
   $ git add index.html
   ```
+
 - Do a git status again for verification - git status is your friend!
 
   ```
   $ git status
   ```
+
   (We won't do a git status all the time once you get better at git but, for now, it'll help us learn)
+
 ---
 
 ### 4. Commit the File
@@ -70,17 +77,20 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
   $ git commit -m "Created index.html"
   ```
 
+  The [commit message](https://xkcd.com/1296/) can be whatever you want, but it should mean something to future you!
+
 ---
 
 ### 5. Make Changes to `index.html`
 
 - Open `index.html` in a text editor of your choice.
+
   * on a mac, you can type `nano index.html` at the command line
   * on Windows, try `micro index.html`
   * you can also just open it in `notepad` (Windows) or `textedit` (Mac) or even `Visual Studio Code`. 
   * On Windows, I love [Notepad++](https://notepad-plus-plus.org/) as a quick general purpose editor. On the Mac, I really love [Moped](https://apps.apple.com/us/app/moped-text-editor/id1477419086?mt=12)!
-  
-- Add the following basic HTML content (you can copy and paste - modify the title or body as you see fit):
+
+- Add the following basic HTML content (you can copy and paste - ***modify the title or body as you see fit)***:
 
   ```html
   <!DOCTYPE html>
@@ -98,6 +108,8 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
   ```
 
 - Save and close the file.
+
+- Open the file in a browser (Chrome, Safari, Edge, whatever). See! It’s really a webpage! Webpages are written in a language called [html](https://en.wikipedia.org/wiki/HTML), for “hypertext markup language”.
 
 ---
 
@@ -147,8 +159,11 @@ Aside: If you did your editing in nano or micro, you should be able to open your
 For this step, you need to make a change directly on the GitHub repository. 
 
 - Go to your repository on GitHub.
+
 - Navigate to `index.html`.
+
 - Click the pencil icon to edit the file.
+
 - Add another paragraph in the <body> section:
 
   ```html
@@ -168,9 +183,11 @@ For this step, you need to make a change directly on the GitHub repository.
   ```
 
   This command fetches the changes but doesn't merge them. Now that you've "fetched" the change, use `git status` to summarize
+
   ```
   $ git status
   ```
+
   Remember, `git status` is your friend!
 
 - Now, `pull` the changes to merge them.
@@ -179,10 +196,14 @@ For this step, you need to make a change directly on the GitHub repository.
   $ git pull
   ```
 
-  If you open `index.html` in a text editor on your local machine, you'll see the new paragraph you added on GitHub.
+  If you open `index.html` in a browser on your local machine, you'll see the new paragraph you added on GitHub!
+
+  ---
+
+  ### Become a Git guru!
+
+  Follow the advice [here](https://xkcd.com/1597/)!
 
 ---
 
 ### Conclusion: Congratulations! You've just practiced creating, modifying, committing, and synchronizing files using Git and GitHub. That's the basic git/GitHub workflow in both directions! With these foundational skills, you're on your way to mastering version control!
-
----
