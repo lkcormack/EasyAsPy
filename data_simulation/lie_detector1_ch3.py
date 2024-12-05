@@ -17,7 +17,9 @@ def simulate_responses(n, mu, sigma):
     mu: Mean of the distribution
     sigma: Standard deviation of the distribution
     """
-    return np.random.normal(mu, sigma, n)
+    # Create a 2D array for easy slicing
+    data = np.column_stack(conditions, data)
+    return data
 
 def convert_to_df(data, conditions, save=False):
     """
@@ -25,9 +27,6 @@ def convert_to_df(data, conditions, save=False):
     data: 2D array of data
     conditions: List of conditions
     """
-    # Create a 2D array for easy slicing
-    data = np.column_stack(conditions, data)
-
     # Convert to a DataFrame for easy viewing
     df = pd.DataFrame(data, columns=["GSR_Truth", "GSR_Control", "GSR_Lie"])
     print(df.head())

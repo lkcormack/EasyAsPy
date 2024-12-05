@@ -16,7 +16,7 @@ class LieDetectorSimulator:
                 data[column_name] = self._simulate_measurement(condition)
         return pd.DataFrame(data)
 
-    def _simulate_measurement(self, condition):
+    def _simulate_measurement(self, condition): 
         if condition == 'lie':
             return np.random.normal(loc=80, scale=10, size=self.num_participants)
         elif condition == 'truth':
@@ -27,7 +27,8 @@ class LieDetectorSimulator:
     def get_data(self):
         return self.data
 
-# Example usage:
-simulator = LieDetectorSimulator(num_participants=100)
-data = simulator.get_data()
-print(data.head())
+if __name__ == "__main__":
+    # Example usage:
+    simulator = LieDetectorSimulator(num_participants=100)
+    data = simulator.get_data()
+    print(data.head())
