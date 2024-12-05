@@ -136,6 +136,7 @@ $\color{blue}{\text{Complete the following exercise.}}$    - What happens when y
 
  
 
+
 ### More operations on `arrays`
 
 Two arrays can be added, or subtracted, or multiplied or whatever!
