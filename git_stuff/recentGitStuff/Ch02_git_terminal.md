@@ -1,6 +1,6 @@
-Using Git and GitHub from a terminal
+# Using Git and GitHub from a terminal
 
-Installing Git: 
+## Installing Git: 
 
 Macs and Linux machines come with [Git](https://github.com/git-guides/install-git) pre-installed, but we windows users need to install it first. BUT, if you’ve installed the [GitHub Desktop App](https://desktop.github.com/download/), Git will have been installed automatically. You can check if Git is installed by  opening a terminal and typing `git version`. If it’s not, follow the instructions [here](https://github.com/git-guides/install-git).
 
@@ -23,9 +23,11 @@ You want a simple webpage to tell the world who your favorite Simpsons character
 
 And we’ll do it all “old school” from the terminal, making us LAMbs into true Git users rather than Git bunnies!
 
+Please refer frequently to the GitHubFlowFigs.pdf figure to make sure you are understanding the big picture!
+
 ---
 
-### 1. Create a New File
+## 1. Create a New File
 
 - Open a terminal in the directory of the repo you cloned in the last exercise (the test or junk repo).
 
@@ -39,9 +41,9 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 2. Check Git Status
+## 2. Check Git Status
 
-- Always a good practice to check the status of your Git repository.
+- Always a good practice to check the status of your Git repository. As Franco always says “git status is your friend!”
 
   ```
   $ git status
@@ -51,7 +53,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 3. Add the File to the git "Staging Area"
+## 3. Add the File to the git "Staging Area"
 
 - Follow git's advice and add `index.html`.
 
@@ -69,7 +71,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 4. Commit the File
+## 4. Commit the File
 
 - Commit the staged changes with a message.
 
@@ -81,7 +83,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 5. Make Changes to `index.html`
+## 5. Make Changes to `index.html`
 
 - Open `index.html` in a text editor of your choice.
 
@@ -113,7 +115,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 6. Check the Status Again
+## 6. Check the Status Again
 
 - Note the changes in your repository.
 
@@ -125,7 +127,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 7. Stage and Commit the Changes
+## 7. Stage and Commit the Changes
 
 - Add the modified file to staging and then commit it.
 
@@ -136,7 +138,7 @@ And we’ll do it all “old school” from the terminal, making us LAMbs into t
 
 ---
 
-### 8. Push to the Remote Repository
+## 8. Push to the Remote Repository
 
 - Ensure your local changes are synchronized with the remote repository (GitHub).
 
@@ -154,7 +156,7 @@ Aside: If you did your editing in nano or micro, you should be able to open your
 
 ---
 
-### 9. Make a change on GitHub and then synch your local repo with the remote changes
+## 9. Make a change on GitHub and then synch your local repo with the remote changes
 
 For this step, you need to make a change directly on the GitHub repository. 
 
@@ -174,7 +176,7 @@ For this step, you need to make a change directly on the GitHub repository.
 
 ---
 
-### 10. Fetch and Pull the Changes
+## 10. Fetch and Pull the Changes
 
 - On your local machine, fetch the changes.
 
